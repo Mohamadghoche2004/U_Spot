@@ -24,12 +24,12 @@ export default function ServicesSection() {
 
   return (
     <div
-      className="services-section  px-10  md:px-50 lg:px-50 mb-50 py-20 accordion-container "
+      className="services-section  px-10  md:px-50 lg:px-50  py-20 accordion-container "
       style={{ width: "100%" }}
     >
       <h1
-        style={{ color: "#f4c93d" }}
-        className="text-center text-2xl lg:text-6xl font-bold mb-10 lg:mb-20"
+        style={{ color: "#246578" }}
+        className="text-center text-2xl lg:text-5xl font-bold mb-10 lg:mb-20"
       >
         Our Services
       </h1>
