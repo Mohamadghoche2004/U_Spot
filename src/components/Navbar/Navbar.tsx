@@ -8,16 +8,17 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  
+
   // Only render theme-dependent content after mounting to avoid hydration mismatch
   useEffect(() => {
     setMounted(true);
   }, []);
 
   // Default logo for server-side rendering (or use a placeholder)
-  const logoSrc = mounted && resolvedTheme === "dark"
-    ? "/USpotlogolight.png"
-    : "/USpotLogo.png";
+  const logoSrc =
+    mounted && resolvedTheme === "dark"
+      ? "/USpotlogolight.png"
+      : "/USpotLogo.png";
 
   return (
     <nav className="bg-white ">
@@ -95,21 +96,24 @@ export default function Navbar() {
               <div className="flex mr-3 items-center gap-1 justify-end">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                 <a
-                  href="https://www.instagram.com/u_spot_1m?igsh=ZG55YmFpc3M5dXZ1"
+                  target="_blank"
+                  href="https://wa.me/96176646946"
                   className="rounded-md bg-gray-100 px-2 py-2 text-sm font-medium text-gray-900"
                   aria-current="page"
                 >
                   Book a call
                 </a>
-                <a href="https://wa.me/96176646946">
-
-                <button
-                  type="button"
-                  className="rounded-[30px] bg-black px-3 py-2 text-sm font-medium text-white hover:cursor-pointer"
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/u_spot_1m?igsh=ZG55YmFpc3M5dXZ1"
+                >
+                  <button
+                    type="button"
+                    className="rounded-[30px] bg-black px-3 py-2 text-sm font-medium text-white hover:cursor-pointer"
                   >
-                  Let&apos;s connect
-                </button>
-                  </a>
+                    Let&apos;s connect
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -123,32 +127,25 @@ export default function Navbar() {
         }`}
         id="mobile-menu"
       >
-        <div className="space-y-1 px-2 pt-2 pb-3">
-          {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
+        <div className="space-y-3 px-4 pt-3 pb-4 flex flex-col items-center">
           <a
-            href="#"
-            className="block rounded-md bg-gray-100 px-3 py-2 text-base font-medium text-gray-900"
-            aria-current="page"
+            target="_blank"
+            href="https://wa.me/96176646946"
+            className="w-full text-center rounded-md bg-gray-100 px-3 py-2 text-base font-medium text-gray-900"
           >
-            Dashboard
+            Book a call
           </a>
           <a
-            href="#"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+            target="_blank"
+            href="https://www.instagram.com/u_spot_1m?igsh=ZG55YmFpc3M5dXZ1"
+            className="w-full text-center"
           >
-            Team
-          </a>
-          <a
-            href="#"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900"
-          >
-            Projects
-          </a>
-          <a
-            href="#"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900"
-          >
-            Calendar
+            <button
+              type="button"
+              className="w-full rounded-[30px] bg-black px-3 py-2 text-base font-medium text-white"
+            >
+              Let&apos;s connect
+            </button>
           </a>
         </div>
       </div>

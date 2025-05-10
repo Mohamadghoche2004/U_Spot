@@ -13,11 +13,14 @@ export default function WorkSection() {
             providing the best possible service to our clients.
           </p>
           <div className="mt-4 sm:mt-0">
+            <a target="_blank" href="https://wa.me/96176646946">
+
             <BorderBottomButton>
               <span className="text-sm sm:text-base md:text-md lg:text-md xl:text-2xl whitespace-nowrap">
                 Book a Discovery Call
               </span>
             </BorderBottomButton>
+            </a>
           </div>
         </div>
       </div>
