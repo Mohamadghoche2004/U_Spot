@@ -23,7 +23,7 @@ export default function HeroSection() {
       gsap.set(illustrationRef.current, { opacity: 0 });
       // Animate heading text
       tl.to(headingRef.current, {
-        text: "Welcome to U_SPot",
+        text: "Welcome to U_Spot",
         duration: 2,
         ease: "none",
       })
@@ -80,7 +80,7 @@ export default function HeroSection() {
           ref={descriptionRef2}
           className="text-center font-bold text-xs sm:text-xs md:text-sm xl:text-lg max-w-md"
         >
-          U_SPot is your space to bring design, code, and video production to life — with a creative community by your side.
+          U_Spot is your space to bring design, code, and video production to life — with a creative community by your side.
         </p>
       </div>
       <div className="w-full flex flex-col items-center justify-center mt-10 md:mt-15">

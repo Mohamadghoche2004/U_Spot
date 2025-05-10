@@ -8,11 +8,12 @@ export default function Footer() {
       </div>
       <div className="col-span-1 flex flex-col  items-center  lg:items-start">
         <h3 className="text-lg font-bold">About Us</h3>
-        <p>Team</p>
+        <p>Team (Coming soon !!)</p>
       </div>
       <div className="col-span-1 flex flex-col items-center  lg:items-start">
         <h3 className="text-lg font-bold">Contact Us</h3>
         <p>Email: mebusiness2004@gmail.com</p>
+        <p>Phone: +961 76 646 946</p>
       </div>
       <div className="col-span-1 flex flex-col  items-center lg:items-start">
         <h3 className="text-lg font-bold">Community</h3>

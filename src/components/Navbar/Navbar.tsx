@@ -95,18 +95,21 @@ export default function Navbar() {
               <div className="flex mr-3 items-center gap-1 justify-end">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                 <a
-                  href="#"
+                  href="https://www.instagram.com/u_spot_1m?igsh=ZG55YmFpc3M5dXZ1"
                   className="rounded-md bg-gray-100 px-2 py-2 text-sm font-medium text-gray-900"
                   aria-current="page"
                 >
                   Book a call
                 </a>
+                <a href="https://wa.me/96176646946">
+
                 <button
                   type="button"
                   className="rounded-[30px] bg-black px-3 py-2 text-sm font-medium text-white hover:cursor-pointer"
-                >
+                  >
                   Let&apos;s connect
                 </button>
+                  </a>
               </div>
             </div>
           </div>
