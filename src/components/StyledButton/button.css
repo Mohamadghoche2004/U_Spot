@@ -1,0 +1,21 @@
+.dark .bg {
+  background-color: white;
+  color: black;
+}
+
+.light .bg {
+  background-color: black;
+  color: white;
+}
+
+/* Hover styles */
+.light .bg:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.dark .bg:hover {
+  background-color: transparent;
+  color: white;
+}
+

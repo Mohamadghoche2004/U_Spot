@@ -1,0 +1,8 @@
+.dark .accordion-container {
+  background-color: #1a1a1a;
+  color: white;
+}
+.light .accordion-container {
+  background-color: white !important;
+  color: black;
+}
