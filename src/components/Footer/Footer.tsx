@@ -1,3 +1,4 @@
+import Link from "next/link";
 import FooterLogo from "../Navbar/components/FooterLogo";
 
 export default function Footer() {
@@ -8,7 +9,9 @@ export default function Footer() {
       </div>
       <div className="col-span-1 flex flex-col  items-center  lg:items-start">
         <h3 className="text-lg font-bold">About Us</h3>
-        <p>Team (Coming soon !!)</p>
+        <Link href="/aboutus">
+          <p>Team</p>
+        </Link>
       </div>
       <div className="col-span-1 flex flex-col items-center  lg:items-start">
         <h3 className="text-lg font-bold">Contact Us</h3>

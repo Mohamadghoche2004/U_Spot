@@ -1,0 +1,13 @@
+.light .section-about{
+    background-color: #f9fafb;
+}
+.dark .section-about{
+    background-color: #111827;
+}
+
+.cards-about{
+    background-color: #f9fafb;
+}
+.dark .cards-about{
+    background-color: #0a0a0a;
+}

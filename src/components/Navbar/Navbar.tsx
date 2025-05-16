@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import "./navbar.css";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { resolvedTheme } = useTheme();
@@ -79,22 +80,26 @@ export default function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <Image
-                src={logoSrc}
-                alt="U-Spot Logo"
-                width={40}
-                height={40}
-                className="h-8 w-auto object-contain p-1"
-                quality={100}
-                priority
-              />
+              <Link href="/">
+                <Image
+                  src={logoSrc}
+                  alt="U-Spot Logo"
+                  width={40}
+                  height={40}
+                  className="h-8 w-auto object-contain p-1"
+                  quality={100}
+                  priority
+                />
+              </Link>
             </div>
-            <div className="flex ml-33 flex-1 items-center justify-center hidden sm:flex">
+            {/* <div className="flex ml-33 flex-1 items-center justify-center hidden sm:flex">
               <div className="navbar-notch"></div>
-            </div>
-            <div className="hidden  sm:block">
-              <div className="flex mr-3 items-center gap-1 justify-end">
+            </div> */}
+            <div className="hidden  sm:block ms-auto">
+              <div className="flex mr-3 items-center gap-3 justify-end">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
+
+                <Link href="/aboutus">About Us</Link>
                 <a
                   target="_blank"
                   href="https://wa.me/96176646946"
@@ -128,6 +133,12 @@ export default function Navbar() {
         id="mobile-menu"
       >
         <div className="space-y-3 px-4 pt-3 pb-4 flex flex-col items-center">
+          <Link 
+            href="/aboutus"
+            className="w-full text-center rounded-md bg-gray-100 px-3 py-2 text-base font-medium text-gray-900"
+          >
+            About Us
+          </Link>
           <a
             target="_blank"
             href="https://wa.me/96176646946"
