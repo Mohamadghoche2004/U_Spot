@@ -43,7 +43,7 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <div ref={sectionRef} className="py-16 px-4 md:px-12 section-about">
+    <div ref={sectionRef} className="py-16 px-4 md:px-12 section-about overflow-x-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Main heading */}
         <h2 ref={headingRef} className="text-4xl md:text-5xl font-bold text-center mb-6">
@@ -104,7 +104,7 @@ export default function AboutSection() {
         
         {/* Company timeline */}
         <h3 className="text-3xl font-bold text-center mb-12">Our Journey</h3>
-        <div className="relative">
+        <div className="relative overflow-hidden">
           {/* Timeline line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200"></div>
           
