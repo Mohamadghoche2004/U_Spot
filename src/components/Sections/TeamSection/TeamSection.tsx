@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import "./teamSection.css";
 type TeamMember = {
   id: number;
   name: string;
@@ -89,7 +89,7 @@ export default function TeamSection() {
                 )}
               </div>
             </div>
-            <div className="p-6">
+            <div className="p-6 team-member-card">
               <h3 className="text-xl font-semibold">{member.name}</h3>
               <p className="text-sm text-blue-600 mb-2">{member.role}</p>
               <motion.div
