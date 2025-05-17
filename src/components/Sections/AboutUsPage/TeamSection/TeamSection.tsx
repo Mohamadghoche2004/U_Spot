@@ -31,7 +31,7 @@ const teamMembers: TeamMember[] = [
     name: "Mahmoud Ramadan",
     role: "Full Stack Developer (Web & Mobile)",
     bio: "Mahmoud is a mobile developer with expertise in Flutter, and full stack developer with expertise in modern web technologies, specializing in building scalable applications and implementing efficient solutions across the entire development stack.",
-    imageUrl: "/MahmoudRamadan.png",
+    imageUrl: "none",
   },
   {
     id: 4,
