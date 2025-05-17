@@ -1,7 +1,8 @@
-import AboutSection from "@/components/Sections/AboutSection/AboutSection";
-import TeamSection from "@/components/Sections/TeamSection/TeamSection";
+
 import SmoothScroll from "@/components/smoothScroll/smoothScroll";
 import "./aboutPage.css";
+import AboutSection from "@/components/Sections/AboutUsPage/AboutSection/AboutSection";
+import TeamSection from "@/components/Sections/AboutUsPage/TeamSection/TeamSection";
 export default function AboutUs() {
   return (
     <div className="min-h-screen">
